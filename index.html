@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <!-- main -->
+    <main class="main">
+      <section class="main_chart">
+        <!-- balance block -->
+        <div class="chart_balance">
+          <span class="balance_title">My balance</span>
+          <span class="balance_amount">$921.48</span>
+          <img src="./images/logo.svg" class="logo" alt="logo icon" />
+        </div>
+        <!-- spendings block -->
+        <section class="chart_spendings-container">
+          <div class="chart_spendings">
+            <h1 class="spendings_title">Spending - Last 7 days</h1>
+            <div class="spending_bar-chart">
+              <!-- mon -->
+              <div class="spending_individual-bar-container">
+                <div class="spending_individual-bar"></div>
+                <span class="spending_day"></span>
+              </div>
+              <!-- tue -->
+              <div class="spending_individual-bar-container">
+                <div class="spending_individual-bar"></div>
+                <span class="spending_day"></span>
+              </div>
+              <!-- wed -->
+              <div class="spending_individual-bar-container">
+                <div class="spending_individual-bar"></div>
+                <span class="spending_day"></span>
+              </div>
+              <!-- thr -->
+              <div class="spending_individual-bar-container">
+                <div class="spending_individual-bar"></div>
+                <span class="spending_day"></span>
+              </div>
+              <!-- fri -->
+              <div class="spending_individual-bar-container">
+                <div class="spending_individual-bar"></div>
+                <span class="spending_day"></span>
+              </div>
+              <!-- sat -->
+              <div class="spending_individual-bar-container">
+                <div class="spending_individual-bar"></div>
+                <span class="spending_day"></span>
+              </div>
+              <!-- sun -->
+              <div class="spending_individual-bar-container">
+                <div class="spending_individual-bar"></div>
+                <span class="spending_day"></span>
+              </div>
+            </div>
+            <hr class="chart_hr" />
+          </div>
+          <!-- total balance -->
+          <div class="chart_total-balance">
+            <div class="total-balance_this-month">
+              <span class="total-balance_this-month_title"
+                >Total this month</span
+              >
+              <span class="total-balance_this-month_amount">$478.33</span>
+            </div>
+            <div class="total-balance_last-month">
+              <span class="total-balance_last-month_amount">+2.4%</span>
+              <span class="total-balance_last-month_title"
+                >from last month</span
+              >
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
