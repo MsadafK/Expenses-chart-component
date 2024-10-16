@@ -61,7 +61,6 @@ body {
 /* MOBILE STYLES */
 /* main */
 .main {
-  border: 1px solid black;
   width: 80vw;
 }
 
@@ -83,7 +82,6 @@ body {
 
 .balance_title {
   align-self: flex-end;
-  /* text-align: left; */
 }
 
 .logo {
@@ -96,19 +94,27 @@ body {
 
 .chart_spendings-container {
   background-color: var(--very-pale-orange);
-  padding: 2rem 1rem;
+  padding: 0 1rem 2rem;
   border-radius: 10px;
 }
 
+.chart_spendings {
+  position: relative;
+}
+
+.spendings_title {
+  position: absolute;
+  top: 2rem;
+}
+
 .spending_bar-chart {
-  border: 1px solid black;
-  height: 8rem;
+  height: 15rem;
 }
 
 .spending_bar-chart {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 0.25rem;
+  gap: 0.5rem;
 }
 
 .spending_individual-bar-container {
@@ -116,7 +122,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  border: 1px solid black;
 }
 
 .spending_individual-bar {
@@ -152,4 +157,34 @@ body {
 .total-balance_last-month {
   display: flex;
   flex-direction: column;
+}
+
+/* MEDIA QUERIES */
+/* 375px and more */
+@media (min-width: 375px) {
+  .logo {
+    width: 40%;
+  }
+}
+
+/* 425px and more */
+@media (min-width: 425px) {
+  .logo {
+    width: 35%;
+  }
+}
+
+/* 768px and more */
+@media (min-width: 768px) {
+  .main {
+    max-width: 425px;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .spending_bar-chart {
+    gap: 1rem;
+  }
 }
